@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href='../css/style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socket-io/0.7.0/socket.min.js"></script>
+    
+
+    <!-- <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular.js"></script> -->
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="controller/registrationCtrl.js"></script>
+    <script src="controller/loginCtrl.js"></script>
+    <script src="controller/forgetpasswordCtrl.js"></script>
+    <script src="controller/resetpasswordCtrl.js"></script>
+    <script src="controller/getAllUserCtrl.js"></script>
+
+    <script src="services/registerService.js"></script>
+    <script src="services/loginService.js"></script>
+    <script src="services/forgetpasswordService.js"></script>
+    <script src="services/resetpasswordService.js"></script>
+    <script src="services/getAllUserService.js"></script>
+
+    <script>
+            var socket = io();
+        </script>
+    
+
+</head>
+
+<body ng-app="chatAppModule">
+
+        <!-- MAIN CONTENT -->
+
+        <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT -->
+        <div>
+            <ui-view></ui-view>
+        </div>
+    
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<body  id='regBody' ng-contoller="loginCtrl">
+    <div class='row' >
+        <br/>
+        <div class='col-lg-4'></div>
+        <div class='col-lg-4'>
+            <form id='loginForm' name='loginForm'>
+                <label  class="regHeading"><b>Login Form</b></label></br>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input class="form-control" ng-model="email" id="email" name="email" type="email" required>
+                    <span style="color:red" ng-show="loginForm.email.$dirty && loginForm.email.$invalid">
+                    <span ng-show="loginForm.email.$error.required">Email is required.</span>
+                    <span ng-show="loginForm.email.$error.email">Invalid email address.</span>
+                </span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password*</label>
+                    <input type="password" class="form-control" ng-model="password" id="password" name="password" ng-minlength="8" ng-maxlength="20" required>
+                    <span style="color:red" ng-show="loginForm.password.$dirty && loginForm.password.$invalid">
+                        <span ng-show="loginForm.password.$error.required">Password is required.</span>
+                        <span style="color:Red" ng-show="loginForm.password.$error.minlength"> Minimum 8 Characters Required </span>
+                        <span style="color:Red" ng-show="loginForm.password.$error.maxlength"> Maximum 20 Characters Allowed </span>
+                    </span>
+                </div>
+                <div class="form-group">
+                
+                        <button type="submit" class="btn btn-success" id="btnlogin" name="btnlogin"  ng-disabled="loginForm.$invalid" ng-click="login()">Login</button>
+                        <button type="reset" class="btn btn-danger" id="btncancel" ng-click="clearfunction(this);reset();">Cancel</button>
+                </div>
+                <div class="form-group">
+                      <b><p class='p'>don't have account? <a ui-sref='registration' href='registration.html' style='text-decoration-style: solid'> Sign up here </a></p></b><br/>
+                      <b><a class='a' ui-sref='forgetPassword' href='forgetPassword.html' style='text-decoration-style: solid'> Forgot Your Password </a></b>
+                </div>
+                </form>
+        </div>
+    </div>
+</body>
+

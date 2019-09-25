@@ -1,0 +1,54 @@
+<body id='regBody' ng-contoller="registrationCtrl">
+    <div class='col-lg-4'></div>
+    <div class='col-lg-4'>
+        <form id='regForm' name="regForm" >
+            <label class="regHeading"><b>Registration Form</b></label></br>
+            <div class="form-group">
+                <label for="firstName">Firstname*</label>
+                <input type="text" class="form-control" ng-model="firstName" id="firstName" name="firstName" ng-pattern="/^[a-zA-Z]{2,}$/" required>
+                <span style="color:red" ng-show="regForm.firstName.$dirty && regForm.firstName.$invalid">
+                    <span ng-show="regForm.firstName.$error.required">Firstname is required.</span>
+                    <span ng-show="regForm.firstName.$error.pattern">Firstname must be atleast 2 letters long and contains letters only .</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Lastname*</label>
+                <input type="text" class="form-control" ng-model="lastName" id="lastName" name="lastName" ng-pattern="/^[a-zA-Z]{2,}$/" required >
+                <span style="color:red" ng-show="regForm.lastName.$dirty && regForm.lastName.$invalid">
+                    <span ng-show="regForm.lastName.$error.required">Lastname is required.</span>
+                    <span ng-show="regForm.lastName.$error.pattern">Lastname must be atleast 2 letters long and contains letters only .</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input class="form-control" ng-model="email" id="email" name="email" type="email" required>
+                <span style="color:red" ng-show="regForm.email.$dirty && regForm.email.$invalid">
+                    <span ng-show="regForm.email.$error.required">Email is required.</span>
+                    <span ng-show="regForm.email.$error.email">Invalid email address.</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" class="form-control" ng-model="password" id="password" name="password" ng-minlength="8" ng-maxlength="20" required>
+                <span style="color:red" ng-show="regForm.password.$dirty && regForm.password.$invalid">
+                    <span ng-show="regForm.password.$error.required">Password is required.</span>
+                    <span style="color:Red" ng-show="regForm.password.$error.minlength"> Minimum 8 Characters Required </span>
+                    <span style="color:Red" ng-show="regForm.password.$error.maxlength"> Maximum 20 Characters Allowed </span>
+                </span>
+            </div>
+            <div class="form-group">
+
+                <button type="submit" class="btn btn-success" id="btnsubmit" ng-click="register()"  ng-disabled="regForm.$invalid">Submit</button>
+                <button type="reset" class="btn btn-danger" id="btncancel" ng-click="clearfunction(this);reset();">Cancel</button>
+            </div>
+            <div class="form-group">
+                <b>
+                    <p class='p'>Already has Account? <a ui-sref='login' href='login.html' style='text-decoration-style: solid'> Login
+                        </a></p>
+                </b>
+            </div>
+
+        </form>
+    </div>
+    </div>
+</body>

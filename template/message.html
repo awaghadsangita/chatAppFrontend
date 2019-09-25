@@ -1,0 +1,52 @@
+<body ng-contoller="getAllUserCtrl" style="background-color:#A2D9CE" id="messageBody">
+    <div class="row">
+            <h1 id="chatAppHeading">CHAT APPLICATION</h1>
+    </div>
+    <div class="row" style="margin-left:40px;">
+            <div class="col-md-3"><i id='welcomeUser'>Welcome </i><b id="usernameLogin">{{loginUser}}</b></div>
+            <div class="col-md-offset-7 col-md-1" style="text-align: left;width:100px;background-color: red;border: 2px solid red; border-radius: 5px;margin-bottom:2px"><a  ng-click="logout()" style="font-size:14px;font-weight:1000px;font-family: 'Courier New', Courier, monospace;color:#ffffff ;">Log Out</a></div>
+    </div>
+
+    
+<div>
+    <div class="row" style="margin-left:2px;">
+        <div class="col-md-3" style="margin-left:2px;overflow: scroll;height: 550px;text-align: center;border-width: 1px;border-style: solid;border-color: #0B5345">
+                <div ng-repeat="x in allusers" ng-show='currentUser!=x.firstName' style="margin:5px;">
+                        <button  type="submit" ng-click="setReceiver(x)" style="color:#145A32;border-radius: 5px;border-width: 1px;border-style: solid;border-color: #0B5345;background-color:#82E0AA;width: 200px;height:35px;margin:5px">{{x.firstName}} {{x.lastName}}</button>
+                 </div>
+        </div>
+        <div class="col-md-8" >
+                <div class="row">
+                        <div class="col-md-5 receiverNameBox">
+                        <h3 id="receiverName">Receiver Name:{{receiverName}}</h3>
+                        </div>
+                </div>
+            <div class="row" id="messageBox" >
+                       
+                <div class="showAllMessage">
+                        <!-- <h3 id="receiverName">Receiver Name:{{receiverName}}</h3> -->
+                    <br><br><br><br>
+                    <div  ng-repeat="y in getAllMessage">
+                            <!-- {{x.message}} -->
+                          <span class="senderText" ng-if="senderId === y.senderID "><b>{{y.message}}</b></span>
+                          <span class="receiverText" ng-if="senderId === y.receiverID"><b>{{y.message}}</b></span>  
+                          <br><br> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-md-9"><textarea class='box-cell box1 textinput' rows="2" cols="75" ng-model="message" name="message" id="message" required>
+                                At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+                        </textarea></div>
+                    <div class=" col-md-2"  style="margin:5px">
+                        <button  type="submit" class="sendMessageBtn" ng-click="sendMessage();clearTextArea()">Send Message</button>
+                </div>
+            </div>
+
+        </div>
+        
+        
+
+</div>
+</body>

@@ -1,0 +1,217 @@
+/* #loginFormbody{
+    background-image: url('../assets/background.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+} */
+#regBody{
+    /* background-color: grey; */
+    align-items: center;
+    background-image: url('../assets/background.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#regForm{
+    background-color: beige;
+    align-content: center;
+    padding:20px;
+    margin-top:50px;
+}
+#resetpasswordForm{
+    background-color: beige;
+    align-content: center;
+    padding:20px;
+    margin-top:50px;
+}
+.containerDiv{
+    text-align:center;
+}
+#registartionpageDiv{
+    height: 700px;
+    width: 400px;
+    text-align: center;
+    
+    display: inline-block;
+    margin-left: 400;
+    margin-top: 50;
+}
+.regLbl{
+    text-align: center;
+    color:black;
+    padding: 20px;
+}
+.regHeading{
+    text-align: center;font-size: 32px;padding-left: 35px;
+}
+#loginForm{
+    background-color: beige;
+    align-content: center;
+    padding:40px;
+    margin-top:50px;
+    
+}
+#forgetPasswordForm{
+    background-color: beige;
+    align-content: center;
+    padding:40px;
+    margin-top:50px;
+}
+.p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    text-align: center;
+}
+.a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    font-style: initial;
+    text-align: center;
+    padding: 100px;
+}
+.resetHeading{
+    text-align: center;font-size: 28px;padding-left: 20px;
+}
+#welcomeUser{
+    text-align: right;
+    font-size: 18;
+    color:#0E6251;
+    font-weight: 1000;
+
+}
+#usernameLogin{
+    color:#1ABC9C;
+    font-style: italic;
+    font-size:18px;
+}
+#messageBody{
+    background-color: #A2D9CE;
+}
+#chatAppHeading{
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 1000;
+    color:#0E6655; 
+}
+body{
+    background-color:#D0D3D4;
+}
+
+.box-cell { 
+    display:table-cell; 
+    /* width:50%;  */
+    padding:10px; 
+} 
+.box-cell.box1 { 
+    /* background:green;  */
+    background :#82E0AA;
+    color:white; 
+    text-align:justify; 
+    
+ }
+ .box-cell.box2 { 
+    background:lightgreen; 
+    text-align:left;
+}  
+#receiverNameBox{
+    margin-left:5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0B5345;
+    padding-left:20px ;
+    height: 50px;
+    
+}
+#messageBox{
+    margin-left:5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0B5345;
+    padding-left:20px ;
+    height: 400px;
+    overflow: scroll;
+    background-image: url('../assets/bg.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.textinput {
+    float: left;
+    width: 100%;
+    min-height: 70px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+    margin:5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0B5345;
+}
+.senderText{
+    position: absolute;
+    right: 5px;
+    font-size: 20px;
+    padding: 6px 6px 0px 0px;
+    margin-right:5px;
+    margin-top:5px;
+    background-color:#CD7054;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .receiverText{
+    position: absolute;
+    left: 5px;
+    font-size: 20px;
+    padding: 6px 3px 0px 6px;
+    margin-left:5px;
+    margin-top:5px;
+    background-color:#8B4C39;
+    color: white;
+    border-radius: 10px;
+  }
+  .showAllMessage{
+    height: 350px;
+    width: 810px;
+    position: absolute;
+    /* left: 30%;
+    top: 20%; */
+    overflow: auto;
+    /* background-color:rgb(245, 241, 241); */
+    /* padding :10px 15px 22px 20px; */
+    /* border-radius: 30px; */
+  }
+  .col-lg-4{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#receiverName{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-style: initial;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left:5px;
+    background-color: #666633;
+    color:white;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    /* position: fixed; */
+}
+.sendMessageBtn
+{
+    margin-top:10px;font-size:18px;font-weight:300px;font-style:italic;color:#145A32;border-radius:2px;margin:15px,15px,2px,2px;height:40px;width:178px;border-style: solid;border-width: 1px;border-color:#0B5345;background-color:#82E0AA
+}
