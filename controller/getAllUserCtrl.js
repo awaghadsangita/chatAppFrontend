@@ -6,7 +6,8 @@ chatAppModule.controller('getAllUserCtrl',function($scope,getAllUserService,Sock
     $scope.senderId=localStorage.getItem('senderId')
     console.log("login username =>",$scope.loginUser);
     console.log("login userid =>",$scope.senderId);
-    $scope.allusers=[]
+    $scope.allusers=[];
+    $scope.getAllMessage=[];
     
     $scope.allUsers=function(){
         let UserData = {
