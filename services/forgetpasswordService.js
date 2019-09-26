@@ -3,7 +3,7 @@ chatAppModule.service('forgetpasswordService',function($http,$location){
     this.forgetPasswordServiceUser=function(data,$scope){
         $http({
             method:'POST',
-            url:'http://localhost:3000/forgetPassword',
+            url:'http://13.232.82.97:3000/forgetPassword',
             data:data
         }).then(
             function(response){

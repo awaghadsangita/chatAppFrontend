@@ -4,7 +4,7 @@ chatAppModule.service('getAllUserService',function($http,$location){
         let token=localStorage.getItem('token');
         $http({
             method:'POST',
-            url:'http://localhost:3000/getAllUser',
+            url:'http://13.232.82.97:3000/getAllUser',
             data:data,
             header:token
         }).then(
@@ -29,7 +29,7 @@ chatAppModule.service('getAllUserService',function($http,$location){
      
         $http({
             method: 'GET',
-            url: 'http://localhost:3000/getAllMessage'
+            url: 'http://13.232.82.97:3000/getAllMessage'
         }).then(function (response) {
             if (response) {
                 // console.log("All message from DB", response.data.content);

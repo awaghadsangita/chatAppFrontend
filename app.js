@@ -38,6 +38,6 @@ chatAppModule.config(['$stateProvider','$urlRouterProvider',($stateProvider,$url
 chatAppModule.service('SocketService', ['socketFactory', function SocketService(socketFactory) {
     
     return socketFactory({
-    ioSocket: io.connect('http://localhost:3000')
+    ioSocket: io.connect('http://13.232.82.97:3000/')
 });
 }]);
