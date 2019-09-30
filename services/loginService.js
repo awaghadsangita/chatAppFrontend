@@ -3,7 +3,7 @@ chatAppModule.service('loginService', function ($http, $location) {
         console.log("login service ", data)
         $http({
             method: 'POST',
-            url: 'http://13.232.82.97:3000/login',
+            url: 'http://13.234.76.176:3000/login',
             data: data
         }).then(
             function (response) {

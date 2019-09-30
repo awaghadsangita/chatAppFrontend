@@ -29,7 +29,7 @@ chatAppModule.service('getAllUserService',function($http,$location){
      
         $http({
             method: 'GET',
-            url: 'http://13.232.82.97:3000/getAllMessage'
+            url: 'http://13.234.76.176:3000/getAllMessage'
         }).then(function (response) {
             if (response) {
                 // console.log("All message from DB", response.data.content);

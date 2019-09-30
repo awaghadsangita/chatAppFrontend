@@ -4,7 +4,7 @@ chatAppModule.service('resetpasswordService', function ($http, $location) {
     
         $http({
             method: 'POST',
-            url: 'http://13.232.82.97:3000/resetPassword',
+            url: 'http://13.234.76.176:3000/resetPassword',
             data: data,
         }).then(
             function (response) {

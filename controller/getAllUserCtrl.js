@@ -52,11 +52,8 @@ $scope.sendMessage=function(){
     // create event and that event listen by server controller
     SocketService.emit("messageContainer",sentObject)
     $scope.getAllMessage.push(sentObject);
-
-    
 }
 var senderId=localStorage.getItem('senderId');
-
 
 SocketService.on(senderId ,function(message) {
       
