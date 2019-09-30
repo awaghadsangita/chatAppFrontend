@@ -4,7 +4,7 @@ chatAppModule.service('getAllUserService',function($http,$location){
         let token=localStorage.getItem('token');
         $http({
             method:'POST',
-            url:'http://13.232.82.97:3000/getAllUser',
+            url:'http://13.234.76.176:3000/getAllUser',
             data:data,
             header:token
         }).then(
